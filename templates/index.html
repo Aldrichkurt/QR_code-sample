@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <h2>🔐 Limited-Use QR Code Generator</h2>
+    <form action="/generate" method="post">
+        <label>QR Code Content:</label><br>
+        <input type="text" name="data" required><br><br>
+
+        <label>Max Scans:</label><br>
+        <input type="number" name="max_scans" value="1" min="1" required><br><br>
+
+        <label>Expire In (minutes):</label><br>
+        <input type="number" name="minutes_valid" value="10" min="1" required><br><br>
+
+        <input type="submit" value="Generate QR Code">
+    </form>
+</body>
+</html>
